@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Multiplication Max!</string>
+    <string name="blank_chrono">00:00</string>
+    <string name= "option_prompt">Select an option</string>
+    <string name= "already_checked">"Looks like you've already checked that one! Press new to generate a new pair."</string>
+    <string name = "wrong">"Incorrect. Try again."</string>
+    <string name="title">"Multiplication Max!"</string>
+    <string name="oneByOneButton">"1 by 1"</string>
+    <string name="oneByOneInstructions">Random integer between 0 and 9 multiplied by a random integer between 0 and 9.</string>
+    <string name="oneByTwoButton">"1 by 2"</string>
+    <string name="oneByTwoInstructions">"Random integer between 0 and 9 multiplied by a random integer between 0 and 99."</string>
+    <string name="twoByTwoButton">"2 by 2"</string>
+    <string name="twoByTwoInstructions">"Random integer between 0 and 99 multiplied by a random integer between 0 and 99."</string>
+    <string name="customButtonText">Custom</string>
+    <string name="customInstructions">Random integer between 1 and 1 multiplied by a random integer between 1 and 1.</string>
+    <string name="newButtonText">New</string>
+    <string name="multiplySymbolText">X</string>
+    <string name="textpadOne">1</string>
+    <string name="textPadTwo">2</string>
+    <string name="textPadThree">3</string>
+    <string name="textPadFour">4</string>
+    <string name="textPadFive">5</string>
+    <string name="textPadSix">6</string>
+    <string name="textPadSeven">7</string>
+    <string name="textPadEight">8</string>
+    <string name="textPadNine">9</string>
+    <string name="textPadZero">0</string>
+    <string name="textPadDelete">delete</string>
+    <string name="checkButtonText">check</string>
+    <string name="answerHintText">Answer</string>
+
+
+</resources>

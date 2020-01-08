@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.w.k.multiplicationapp.MainActivity"
+    tools:layout_editor_absoluteY="25dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <Button
+        android:id="@+id/twobytwo"
+        android:layout_width="88dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="32dp"
+        android:background="#203f70"
+        android:onClick="opt3"
+        android:text="@string/twoByTwoButton"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/description1by2" />
+
+    <Button
+        android:id="@+id/onebyone"
+        android:layout_width="88dp"
+        android:layout_height="32dp"
+        android:background="#203f70"
+        android:onClick="opt1"
+        android:text="@string/oneByOneButton"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/multmadtitle" />
+
+    <Button
+        android:id="@+id/onebytwo"
+        android:layout_width="88dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="32dp"
+        android:background="#203f70"
+        android:onClick="opt2"
+        android:text="@string/oneByTwoButton"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/description1by1" />
+
+    <Spinner
+        android:id="@+id/factor1min"
+        android:layout_width="86dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="345dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/factor1max"
+        android:layout_width="86dp"
+        android:layout_height="80dp"
+        app:layout_constraintLeft_toRightOf="@+id/factor1min"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="345dp" />
+
+    <Spinner
+        android:id="@+id/factor2min"
+        android:layout_width="86dp"
+        android:layout_height="80dp"
+        app:layout_constraintRight_toLeftOf="@+id/factor2max"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="345dp" />
+
+    <Spinner
+        android:id="@+id/factor2max"
+        android:layout_width="86dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="345dp" />
+
+    <Button
+        android:id="@+id/custombutt"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginTop="429dp"
+        android:background="#203f70"
+        android:onClick="customset"
+        android:text="@string/customButtonText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/descriptioncustom"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/customInstructions"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/custombutt"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/multmadtitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:gravity="center"
+        android:text="@string/title"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp" />
+
+    <TextView
+        android:id="@+id/description1by1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/oneByOneInstructions"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/onebyone" />
+
+    <TextView
+        android:id="@+id/description1by2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/oneByTwoInstructions"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/onebytwo" />
+
+    <TextView
+        android:id="@+id/description2by2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="@string/twoByTwoInstructions"
+        app:layout_constraintBottom_toTopOf="@+id/factor2min"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/twobytwo"
+        app:layout_constraintVertical_bias="0.0" />
+
+</android.support.constraint.ConstraintLayout>
